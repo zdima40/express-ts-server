@@ -20,6 +20,7 @@ export class App {
 
     private middlewares() {
         this.app.use(logger('dev'));
+        this.app.use(express.json());
     }
 
     private routes() {
